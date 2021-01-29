@@ -1,2 +1,10 @@
-# cp-kafka-connect
-# cp-server-connect-operator
+# Introduction
+
+This project provides an example Dockerfile that is used to extend the [confluentinc/cp-kafka-connect](https://hub.docker.com/r/confluentinc/cp-kafka-connect) docker image. Creating a standard docker image is a common way to deploy Kafka Connect workers. Please note the content in this repository is generated based on a build script. Any pull requests should go against [jcustenborder/kafka-connect-docker](https://github.com/jcustenborder/kafka-connect-docker) instead.
+
+The following tags of this image are available. Tags are based on the image they are based from.
+
+| Image | Version | Branch |
+|-------|---------|--------|
+| confluentinc/cp-kafka-connect | 6.0.1-1-ubi8 | [6.0.1](tree/6.0.1) |
+| confluentinc/cp-kafka-connect | 6.0.0-1-ubi8 | [6.0.0](tree/6.0.0) |
