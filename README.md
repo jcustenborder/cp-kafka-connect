@@ -6,5 +6,5 @@ The following tags of this image are available. Tags are based on the image they
 
 | Image | Version | Branch |
 |-------|---------|--------|
-| confluentinc/cp-kafka-connect | 6.0.1-1-ubi8 | [6.0.1](tree/6.0.1) |
-| confluentinc/cp-kafka-connect | 6.0.0-1-ubi8 | [6.0.0](tree/6.0.0) |
+| confluentinc/cp-kafka-connect | 6.0.1-1-ubi8 | [6.0.1](https://github.com/jcustenborder/cp-kafka-connect/tree/6.0.1) |
+| confluentinc/cp-kafka-connect | 6.0.0-1-ubi8 | [6.0.0](https://github.com/jcustenborder/cp-kafka-connect/tree/6.0.0) |
