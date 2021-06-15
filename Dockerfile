@@ -7,6 +7,7 @@ RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq-sink:1
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:0.5.0
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq:11.0.7
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq-sink:1.3.2
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.2.0
 RUN confluent-hub install --no-prompt debezium/debezium-connector-mysql:1.5.0
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-aws:0.1.1
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-azure:0.1.2
