@@ -1,0 +1,13 @@
+#!groovy
+@Library('jenkins-pipeline') import com.github.jcustenborder.jenkins.pipeline.ConnectDockerPipeline
+
+def pipe = new DockerPipeline()
+pipe.imageName = 'cp-kafka-connect'
+pipe.majorVersion = 5
+pipe.minorVersion = 5
+pipe.patchVersion = 1
+pipe.repositories = [
+    ['credential': 'custenborder_docker', 'registry': 'https://docker.custenborder.com', 'repository': 'jcustenborder']
+]
+pipe.execute()
+
