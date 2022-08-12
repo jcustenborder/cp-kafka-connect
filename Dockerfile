@@ -2,13 +2,16 @@ FROM confluentinc/cp-kafka-connect:6.1.0-1-ubi8
 LABEL maintainer="Jeremy Custenborder jcustenborder@gmail.com"
 ENV CONNECT_PLUGIN_PATH=/usr/share/java,/usr/share/confluent-hub-components
 RUN confluent-hub install --no-prompt C0urante/kafka-connect-reddit:0.1.3
-RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq:11.0.17
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq:11.0.18
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq-sink:2.1.0
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:0.5.3
-RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq:11.0.17
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq:11.0.18
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq-sink:2.1.0
-RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.5.1
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.5.2
+RUN confluent-hub install --no-prompt debezium/debezium-connector-mongodb:1.9.3
 RUN confluent-hub install --no-prompt debezium/debezium-connector-mysql:1.9.3
+RUN confluent-hub install --no-prompt debezium/debezium-connector-postgresql:1.9.3
+RUN confluent-hub install --no-prompt debezium/debezium-connector-sqlserver:1.9.3
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-aws:0.1.2
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-azure:0.1.2
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-gcloud:0.1.1
